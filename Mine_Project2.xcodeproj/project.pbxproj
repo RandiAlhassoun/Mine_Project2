@@ -11,6 +11,11 @@
 		C10481AD29406A7D0021DDB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481AC29406A7D0021DDB2 /* ContentView.swift */; };
 		C10481AF29406A7E0021DDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10481AE29406A7E0021DDB2 /* Assets.xcassets */; };
 		C10481B229406A7E0021DDB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10481B129406A7E0021DDB2 /* Preview Assets.xcassets */; };
+		C10481B929406F5E0021DDB2 /* Selectpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481B829406F5E0021DDB2 /* Selectpage.swift */; };
+		C10481BB294077BE0021DDB2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BA294077BE0021DDB2 /* TabBar.swift */; };
+		C10481BD2940791B0021DDB2 /* Sign Up Learner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BC2940791B0021DDB2 /* Sign Up Learner.swift */; };
+		C10481C0294081200021DDB2 /* Sign Up Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BF294081200021DDB2 /* Sign Up Developer.swift */; };
+		C10481C2294081A80021DDB2 /* Sign Up Developer 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		C10481AC29406A7D0021DDB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C10481AE29406A7E0021DDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10481B129406A7E0021DDB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C10481B829406F5E0021DDB2 /* Selectpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectpage.swift; sourceTree = "<group>"; };
+		C10481BA294077BE0021DDB2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		C10481BC2940791B0021DDB2 /* Sign Up Learner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Learner.swift"; sourceTree = "<group>"; };
+		C10481BF294081200021DDB2 /* Sign Up Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Developer.swift"; sourceTree = "<group>"; };
+		C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Developer 2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,11 @@
 				C10481AC29406A7D0021DDB2 /* ContentView.swift */,
 				C10481AE29406A7E0021DDB2 /* Assets.xcassets */,
 				C10481B029406A7E0021DDB2 /* Preview Content */,
+				C10481B829406F5E0021DDB2 /* Selectpage.swift */,
+				C10481BA294077BE0021DDB2 /* TabBar.swift */,
+				C10481BC2940791B0021DDB2 /* Sign Up Learner.swift */,
+				C10481BF294081200021DDB2 /* Sign Up Developer.swift */,
+				C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */,
 			);
 			path = Mine_Project2;
 			sourceTree = "<group>";
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C10481AD29406A7D0021DDB2 /* ContentView.swift in Sources */,
+				C10481BD2940791B0021DDB2 /* Sign Up Learner.swift in Sources */,
+				C10481B929406F5E0021DDB2 /* Selectpage.swift in Sources */,
+				C10481C2294081A80021DDB2 /* Sign Up Developer 2.swift in Sources */,
 				C10481AB29406A7D0021DDB2 /* Mine_Project2App.swift in Sources */,
+				C10481C0294081200021DDB2 /* Sign Up Developer.swift in Sources */,
+				C10481BB294077BE0021DDB2 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
