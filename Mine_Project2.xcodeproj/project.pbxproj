@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43C46A2D29406F5900FAE0DD /* Home Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C46A2C29406F5900FAE0DD /* Home Page1.swift */; };
 		C10481AB29406A7D0021DDB2 /* Mine_Project2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481AA29406A7D0021DDB2 /* Mine_Project2App.swift */; };
 		C10481AD29406A7D0021DDB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481AC29406A7D0021DDB2 /* ContentView.swift */; };
 		C10481AF29406A7E0021DDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10481AE29406A7E0021DDB2 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43C46A2C29406F5900FAE0DD /* Home Page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Page1.swift"; sourceTree = "<group>"; };
 		C10481A729406A7D0021DDB2 /* Mine_Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mine_Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10481AA29406A7D0021DDB2 /* Mine_Project2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mine_Project2App.swift; sourceTree = "<group>"; };
 		C10481AC29406A7D0021DDB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 		C104819E29406A7D0021DDB2 = {
 			isa = PBXGroup;
 			children = (
+				43C46A2C29406F5900FAE0DD /* Home Page1.swift */,
 				C10481A929406A7D0021DDB2 /* Mine_Project2 */,
 				C10481A829406A7D0021DDB2 /* Products */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C46A2D29406F5900FAE0DD /* Home Page1.swift in Sources */,
 				C10481AD29406A7D0021DDB2 /* ContentView.swift in Sources */,
 				C10481AB29406A7D0021DDB2 /* Mine_Project2App.swift in Sources */,
 			);
