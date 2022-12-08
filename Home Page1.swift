@@ -6,27 +6,92 @@
 //
 
 import SwiftUI
-
 struct HomePage1: View {
+    @State private var searchText = ""
+    @State private var isAllingClicke = false
+    @State private var isIosClicked = false
+    @State private var isJavaClicked = false
+    @State private var iscClicked = false
+    
+    
     var body: some View {
-        NavigationView {
+        if #available(iOS 16.0, *) {
+            NavigationStack {
             ZStack{
-                Rectangle()
-                    .fill(Color(red: 0.176, green: 0.217, blue: 0.479))
-                    .frame(width: 900, height: 200)
-                    .font(.largeTitle)
-                    .padding(.bottom, 780.0)
+
+                HStack {
+                    VStack(alignment: .leading, spacing: 8.0){
+                        Text("Developers In")
+                        HStack(spacing: 15.0){
+                            Button("All"){
+                                
+                                isAllingClicke.toggle()
+                            }
+                            .buttonStyle(.bordered)
+                            .foregroundColor(Color(.black))
+                            .background(isAllingClicke ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                            .cornerRadius(5)
+                            
+                            Button("Java"){
+                                
+                                isJavaClicked.toggle()
+                            }
+                            .buttonStyle(.bordered)
+                            .foregroundColor(Color(.black))
+                            .background(isJavaClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                            .cornerRadius(5)
+                            
+                            Button("IOS"){
+                                
+                                isIosClicked.toggle()
+                            }
+                            .buttonStyle(.bordered)
+                            .foregroundColor(Color(.black))
+                            .background(isIosClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                            .cornerRadius(5)
+                            Button("#C"){
+                                
+                                iscClicked.toggle()
+                            }
+                            .buttonStyle(.bordered)
+                            .foregroundColor(Color(.black))
+                            .background(iscClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                            .cornerRadius(5)
+                        }
+                    }
+                    .padding(.bottom, 550.0)
+                    
+                    Spacer()
+                }
+                .padding()
+            }
+                
+                
+                .navigationTitle("Explore")
+
+                .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
+, tintColor: .white)
+
             }
             
-
-            .navigationTitle("Explore")
+            .searchable(text: $searchText)
+        } else {
+            
+            
+        }
+    }
+    
+    
+    struct HomePage1_Previews: PreviewProvider {
+        static var previews: some View {
+            HomePage1()
         }
     }
 }
 
-struct HomePage1_Previews: PreviewProvider {
-    static var previews: some View {
-        HomePage1()
-    }
-}
 
+extension View {
+  func navigationBarColor(backgroundColor: UIColor, tintColor: UIColor) -> some View {
+    self.modifier(NavigationBarColor(backgroundColor: backgroundColor, tintColor: tintColor))
+  }
+}
