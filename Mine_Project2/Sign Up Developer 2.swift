@@ -23,18 +23,18 @@ struct Sign_Up_Developer_2: View {
 
         VStack{
             //=========================================
-                        VStack(spacing: 20){
-//                            Text("Sign UP")
-//                                .font(.title)
-//                                .multilineTextAlignment(.leading)
-
-                    }//v
-                        .font(.title3)
-                        //.padding()
-                        .frame(width: 1000, height: 200)
-                        .foregroundColor(Color.white)
-                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
-            Spacer()
+//                        VStack(spacing: 20){
+////                            Text("Sign UP")
+////                                .font(.title)
+////                                .multilineTextAlignment(.leading)
+//
+//                    }//v
+//                        .font(.title3)
+//                        //.padding()
+//                        .frame(width: 1000, height: 200)
+//                        .foregroundColor(Color.white)
+//                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
+//            Spacer()
             //=========================================
             
             VStack(alignment: .leading){
@@ -47,9 +47,9 @@ struct Sign_Up_Developer_2: View {
                 HStack{ Button("Java"){
                     
                     isJavaClicked.toggle()
-//                    isOtherClicked = false
-//                    isSwiftClicked = false
-//                    isPythonClicked = false
+                    isOtherClicked = false
+                    isSwiftClicked = false
+                    isPythonClicked = false
                     
                 }
                         .buttonStyle(.bordered)
@@ -60,9 +60,9 @@ struct Sign_Up_Developer_2: View {
                     Button("IOS"){
                         
                         isSwiftClicked.toggle()
-//                        isOtherClicked = false
-//                        isPythonClicked = false
-//                        isJavaClicked = false
+                        isOtherClicked = false
+                        isPythonClicked = false
+                        isJavaClicked = false
                     }
                         .buttonStyle(.bordered)
                         .foregroundColor(isSwiftClicked ? Color(UIColor.systemBackground) : .black )
@@ -74,9 +74,9 @@ struct Sign_Up_Developer_2: View {
                     Button("Python" ){
                         
                         isPythonClicked.toggle()
-//                        isOtherClicked = false
-//                        isJavaClicked = false
-//                        isSwiftClicked = false
+                        isOtherClicked = false
+                        isJavaClicked = false
+                        isSwiftClicked = false
                     }
                         .buttonStyle(.bordered)
                         .foregroundColor(isPythonClicked ? Color(UIColor.systemBackground) : .black )
@@ -84,17 +84,17 @@ struct Sign_Up_Developer_2: View {
                         .background(isPythonClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
                         .cornerRadius(5)
                 
-                    Button("Other"){
-                        
-                        isOtherClicked.toggle()
-//                        isPythonClicked = false
-//                        isJavaClicked = false
-//                        isSwiftClicked = false
-                    }
-                        .buttonStyle(.bordered)
-                        .foregroundColor(isOtherClicked ? Color(UIColor.systemBackground) : .black)
-                        .background(isOtherClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
-                        .cornerRadius(5)
+//                    Button("Other"){
+//                        
+//                        isOtherClicked.toggle()
+////                        isPythonClicked = false
+////                        isJavaClicked = false
+////                        isSwiftClicked = false
+//                    }
+//                        .buttonStyle(.bordered)
+//                        .foregroundColor(isOtherClicked ? Color(UIColor.systemBackground) : .black)
+//                        .background(isOtherClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
+//                        .cornerRadius(5)
                     
                 }
                    // .padding()
@@ -111,10 +111,14 @@ struct Sign_Up_Developer_2: View {
                    // .padding()
                     //.multilineTextAlignment(.leading)
                 TextField("Write About your selfe", text: .constant(""))
+                    .padding(.bottom, 100.0)
+                    .padding()
                     .frame(width: 350, height: 150)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .background(Color(red: 0.933, green: 0.933, blue: 0.938))
                     .cornerRadius(5)
+                
+
                 
                     
                   //.padding()
@@ -144,7 +148,8 @@ struct Sign_Up_Developer_2: View {
                 
         }//vs
         .navigationTitle("Sign UP")
-
+        .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
+        , tintColor: .white)
     }
 }
 

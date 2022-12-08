@@ -10,20 +10,20 @@ import SwiftUI
 struct Sign_Up_Developer: View {
     var body: some View {
         VStack{
-            //=========================================
-                        VStack(spacing: 20){
-//                            Text("Sign UP")
-//                                .font(.title)
-//                                .multilineTextAlignment(.leading)
-
-                    }//v
-                        .font(.title3)
-                        //.padding()
-                        .frame(width: 1000, height: 200)
-                        .foregroundColor(Color.white)
-                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
-            Spacer()
-            //=========================================
+//            //=========================================
+//                        VStack(spacing: 20){
+////                            Text("Sign UP")
+////                                .font(.title)
+////                                .multilineTextAlignment(.leading)
+//
+//                    }//v
+//                        .font(.title3)
+//                        //.padding()
+//                        .frame(width: 1000, height: 200)
+//                        .foregroundColor(Color.white)
+//                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
+//            Spacer()
+//            //=========================================
             
             VStack(alignment: .leading){
                 //-----------name--------------------------------
@@ -72,7 +72,7 @@ struct Sign_Up_Developer: View {
             }//info vstack
             .padding()
             Spacer()
-            NavigationLink(destination: ContentView()) {
+            NavigationLink(destination: Sign_Up_Developer_2()) {
                Text("Next").font(.title3).padding()
                 //.frame()
                     .frame(width: 350, height: 40)
@@ -93,6 +93,8 @@ struct Sign_Up_Developer: View {
                 
         }//vs
         .navigationTitle("Sign UP")
+        .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
+        , tintColor: .white)
             }//body
 }
 

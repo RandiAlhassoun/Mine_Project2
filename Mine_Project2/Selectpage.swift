@@ -12,24 +12,24 @@ struct Selectpage: View {
         NavigationView{
         VStack{
             //---------------------------------
-                        VStack(spacing: 20){
-//                            Text("Sign UP")
-//                                .font(.title)
-//                                .multilineTextAlignment(.leading)
-
-                    }//v
-                        .font(.title3)
-                        //.padding()
-                        .frame(width: 1000, height: 200)
-                        .foregroundColor(Color.white)
-                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
-            Spacer()
+//                        VStack(spacing: 20){
+////                            Text("Sign UP")
+////                                .font(.title)
+////                                .multilineTextAlignment(.leading)
+//
+//                    }//v
+//                        .font(.title3)
+//                        //.padding()
+//                        .frame(width: 1000, height: 200)
+//                        .foregroundColor(Color.white)
+//                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
+//            Spacer()
 //            //---------------------------------
             Text("Select type of account")
                 .font(.title)
                 .foregroundColor(Color(red: 0.176, green: 0.217, blue: 0.479))
             
-            NavigationLink(destination: ContentView()) {
+            NavigationLink(destination: Sign_Up_Learner()) {
                Text("Learner").font(.title3).padding()
                 //.frame()
                     .frame(width: 350, height: 40)
@@ -38,7 +38,7 @@ struct Selectpage: View {
                     .cornerRadius(5)
                     .padding()
             }
-            NavigationLink(destination: ContentView()) {
+            NavigationLink(destination: Sign_Up_Developer()) {
                Text("Developer").font(.title3).padding()
                 //.frame()
                     .frame(width: 350, height: 40)
@@ -47,10 +47,17 @@ struct Selectpage: View {
                     .cornerRadius(5)
                     .padding()
             }
+            
+                    
+
                 
         }//vs
         .navigationTitle("Sign UP")
-    }//NavigationView{
+        .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
+        , tintColor: .white)
+       
+
+        }//NavigationView{
     }//body
 }
 

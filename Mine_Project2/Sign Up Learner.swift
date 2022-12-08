@@ -11,18 +11,18 @@ struct Sign_Up_Learner: View {
     var body: some View {
         VStack{
             //=========================================
-                        VStack(spacing: 20){
-//                            Text("Sign UP")
-//                                .font(.title)
-//                                .multilineTextAlignment(.leading)
-
-                    }//v
-                        .font(.title3)
-                        //.padding()
-                        .frame(width: 1000, height: 200)
-                        .foregroundColor(Color.white)
-                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
-            Spacer()
+//                        VStack(spacing: 20){
+////                            Text("Sign UP")
+////                                .font(.title)
+////                                .multilineTextAlignment(.leading)
+//
+//                    }//v
+//                        .font(.title3)
+//                        //.padding()
+//                        .frame(width: 1000, height: 200)
+//                        .foregroundColor(Color.white)
+//                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
+//            Spacer()
             //=========================================
             
             VStack(alignment: .leading){
@@ -93,7 +93,8 @@ struct Sign_Up_Learner: View {
                 
         }//vs
         .navigationTitle("Sign UP")
-        
+        .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
+        , tintColor: .white)
     }//body
 }
 
