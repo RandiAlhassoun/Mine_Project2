@@ -37,10 +37,13 @@ struct DeveloperScreen: View {
                     .resizable()
                     .frame(width: 50, height: 50, alignment: .center)
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.black, lineWidth: 2.0))
+                    .overlay(Circle().stroke(Color(red: 0.176, green: 0.217, blue: 0.479), lineWidth: 2.0))
                 VStack(alignment: .leading) {
                     Text(user.title).font(.headline)
+                        .foregroundColor(Color(red: 0.176, green: 0.217, blue: 0.479))
+                        .bold()
                     Text(user.value).font(.subheadline)
+                        .foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
                 }
                     }.padding(.init(top: 12, leading: 0, bottom: 12, trailing: 0))
                 }

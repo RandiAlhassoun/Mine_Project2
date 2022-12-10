@@ -23,6 +23,8 @@ struct DeveloperView: View {
                     HStack {
                         VStack(alignment: .leading, spacing: 8.0){
                             Text("Developers In")
+                                .foregroundColor(Color(red: 0.176, green: 0.217, blue: 0.479))
+                            
                             HStack(spacing: 8.0){
                                 Button("All         "){
                                     
@@ -30,7 +32,8 @@ struct DeveloperView: View {
                                 }
                                 .buttonStyle(.bordered)
                                 .foregroundColor(Color(.black))
-                                .background(isAllingClicke ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                                .background(isAllingClicke ? Color(red: 0.793, green: 0.853, blue: 1.001) : Color(UIColor
+                                    .systemBackground) )
                                 .cornerRadius(5)
                                 
                                 Button("Java      "){
@@ -39,7 +42,7 @@ struct DeveloperView: View {
                                 }
                                 .buttonStyle(.bordered)
                                 .foregroundColor(Color(.black))
-                                .background(isJavaClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                                .background(isJavaClicked ? Color(red: 0.793, green: 0.853, blue: 1.001) : Color(UIColor.systemBackground) )
                                 .cornerRadius(5)
                                 
                                 Button("IOS       "){
@@ -48,7 +51,7 @@ struct DeveloperView: View {
                                 }
                                 .buttonStyle(.bordered)
                                 .foregroundColor(Color(.black))
-                                .background(isIosClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                                .background(isIosClicked ? Color(red: 0.793, green: 0.853, blue: 1.001) : Color(UIColor.systemBackground) )
                                 .cornerRadius(5)
                                 Button("Python"){
                                     
@@ -56,7 +59,7 @@ struct DeveloperView: View {
                                 }
                                 .buttonStyle(.bordered)
                                 .foregroundColor(Color(.black))
-                                .background(iscClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                                .background(iscClicked ? Color(red: 0.793, green: 0.853, blue: 1.001) : Color(UIColor.systemBackground) )
                                 .cornerRadius(5)
                             }
                         }
