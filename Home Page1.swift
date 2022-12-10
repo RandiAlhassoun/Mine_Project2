@@ -23,8 +23,8 @@ struct DeveloperView: View {
                     HStack {
                         VStack(alignment: .leading, spacing: 8.0){
                             Text("Developers In")
-                            HStack(spacing: 15.0){
-                                Button("All"){
+                            HStack(spacing: 8.0){
+                                Button("All         "){
                                     
                                     isAllingClicke.toggle()
                                 }
@@ -33,7 +33,7 @@ struct DeveloperView: View {
                                 .background(isAllingClicke ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
                                 .cornerRadius(5)
                                 
-                                Button("Java"){
+                                Button("Java      "){
                                     
                                     isJavaClicked.toggle()
                                 }
@@ -42,7 +42,7 @@ struct DeveloperView: View {
                                 .background(isJavaClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
                                 .cornerRadius(5)
                                 
-                                Button("IOS"){
+                                Button("IOS       "){
                                     
                                     isIosClicked.toggle()
                                 }
@@ -50,7 +50,7 @@ struct DeveloperView: View {
                                 .foregroundColor(Color(.black))
                                 .background(isIosClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
                                 .cornerRadius(5)
-                                Button("#C"){
+                                Button("Python"){
                                     
                                     iscClicked.toggle()
                                 }
@@ -60,7 +60,7 @@ struct DeveloperView: View {
                                 .cornerRadius(5)
                             }
                         }
-                        .padding(.bottom, 550.0)
+                        .padding(.bottom, 500.0)
                         
                         Spacer()
                     }

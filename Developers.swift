@@ -21,10 +21,10 @@ let title, value, imageName: String
 
 struct DeveloperScreen: View {
     var users: [User] = [
-        .init(id: 0, title: "Abdallah Mohamed" , value: "IOS Develorer" , imageName: "A"),
-        .init(id: 1, title: "Faisal AlThaqafi" , value: "Java Developer" , imageName: "B"),
-        .init(id: 2, title: "Waleed" , value: "Python - Java Developer" , imageName: "A"),
-        .init(id: 3, title: "Sara" , value: "IOS Developer" , imageName: "B"),
+        .init(id: 0, title: "Abdallah Mohamed" , value: "IOS Develorer" , imageName: "Aimage"),
+        .init(id: 1, title: "Faisal AlThaqafi" , value: "Java Developer" , imageName: "Bimage"),
+        .init(id: 2, title: "Waleed" , value: "Python - Java Developer" , imageName: "Dimage"),
+        .init(id: 3, title: "Sara" , value: "IOS Developer" , imageName: "Cimage"),
     ]
     
     var body: some View {
