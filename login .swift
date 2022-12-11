@@ -10,6 +10,8 @@ import SwiftUI
 struct SecureTextField: View {
     
     @State private var isSecureTextField: Bool = true
+    @State private var ForgetPW: Bool = false
+
     @Binding var text: String
     
     var body: some View {
