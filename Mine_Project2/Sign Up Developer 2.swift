@@ -9,32 +9,32 @@ import SwiftUI
 
 struct Sign_Up_Developer_2: View {
     
-    @State private var isEncouragingClicked = false
-    @State private var isEntertainmentClicked = false
-    @State private var isRelaxationClicked = false
-    @State private var isHealthClicked = false
-    
-    @State private var isEncouraging1Clicked = false
-    @State private var isEntertainment1Clicked = false
-    @State private var isRelaxation1Clicked = false
-    @State private var isHealth1Clicked = false
+    @State private var isJavaClicked = false
+    @State private var isSwiftClicked = false
+    @State private var isPythonClicked = false
+    @State private var isOtherClicked = false
+//
+//    @State private var isEncouraging1Clicked = false
+//    @State private var isEntertainment1Clicked = false
+//    @State private var isRelaxation1Clicked = false
+//    @State private var isHealth1Clicked = false
     
     var body: some View {
 
         VStack{
             //=========================================
-                        VStack(spacing: 20){
-//                            Text("Sign UP")
-//                                .font(.title)
-//                                .multilineTextAlignment(.leading)
-
-                    }//v
-                        .font(.title3)
-                        //.padding()
-                        .frame(width: 1000, height: 200)
-                        .foregroundColor(Color.white)
-                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
-            Spacer()
+//                        VStack(spacing: 20){
+////                            Text("Sign UP")
+////                                .font(.title)
+////                                .multilineTextAlignment(.leading)
+//
+//                    }//v
+//                        .font(.title3)
+//                        //.padding()
+//                        .frame(width: 1000, height: 200)
+//                        .foregroundColor(Color.white)
+//                        .background(Color(red: 0.176, green: 0.217, blue: 0.479))
+//            Spacer()
             //=========================================
             
             VStack(alignment: .leading){
@@ -46,54 +46,55 @@ struct Sign_Up_Developer_2: View {
                 
                 HStack{ Button("Java"){
                     
-                    isEncouragingClicked.toggle()
-//                    isHealthClicked = false
-//                    isEntertainmentClicked = false
-//                    isRelaxationClicked = false
+                    isJavaClicked.toggle()
+                    isOtherClicked = false
+                    isSwiftClicked = false
+                    isPythonClicked = false
                     
                 }
                         .buttonStyle(.bordered)
-                        .foregroundColor(Color(.black))
-                        .background(isEncouragingClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                        .foregroundColor(isJavaClicked ?Color(UIColor.systemBackground) : .black)//------
+                        .background(isJavaClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
                         .cornerRadius(5)
                   
                     Button("IOS"){
                         
-                        isEntertainmentClicked.toggle()
-//                        isHealthClicked = false
-//                        isRelaxationClicked = false
-//                        isEncouragingClicked = false
+                        isSwiftClicked.toggle()
+                        isOtherClicked = false
+                        isPythonClicked = false
+                        isJavaClicked = false
                     }
                         .buttonStyle(.bordered)
-                        .foregroundColor(Color(.black))
-                        .background(isEntertainmentClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                        .foregroundColor(isSwiftClicked ? Color(UIColor.systemBackground) : .black )
+                        .background(isSwiftClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
                         .cornerRadius(5)
                 }
                 
                 HStack{
-                    Button("Relaxation" ){
+                    Button("Python" ){
                         
-                        isRelaxationClicked.toggle()
-//                        isHealthClicked = false
-//                        isEncouragingClicked = false
-//                        isEntertainmentClicked = false
+                        isPythonClicked.toggle()
+                        isOtherClicked = false
+                        isJavaClicked = false
+                        isSwiftClicked = false
                     }
                         .buttonStyle(.bordered)
-                        .foregroundColor(Color(.black))
-                        .background(isRelaxationClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
+                        .foregroundColor(isPythonClicked ? Color(UIColor.systemBackground) : .black )
+                    
+                        .background(isPythonClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
                         .cornerRadius(5)
                 
-                    Button("Health"){
-                        
-                        isHealthClicked.toggle()
-//                        isRelaxationClicked = false
-//                        isEncouragingClicked = false
-//                        isEntertainmentClicked = false
-                    }
-                        .buttonStyle(.bordered)
-                        .foregroundColor(Color(.black))
-                        .background(isHealthClicked ? Color(red: 0.176, green: 0.217, blue: 0.479) : Color(UIColor.systemBackground) )
-                        .cornerRadius(5)
+//                    Button("Other"){
+//                        
+//                        isOtherClicked.toggle()
+////                        isPythonClicked = false
+////                        isJavaClicked = false
+////                        isSwiftClicked = false
+//                    }
+//                        .buttonStyle(.bordered)
+//                        .foregroundColor(isOtherClicked ? Color(UIColor.systemBackground) : .black)
+//                        .background(isOtherClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
+//                        .cornerRadius(5)
                     
                 }
                    // .padding()
@@ -109,11 +110,17 @@ struct Sign_Up_Developer_2: View {
                 Text("About your selfe")
                    // .padding()
                     //.multilineTextAlignment(.leading)
-                TextField("Write your Email", text: .constant(""))
-                    .frame(width: 350, height: 40)
-                    .foregroundColor(.white)
+                TextField("Write About your selfe", text: .constant(""))
+                    .padding(.bottom, 100.0)
+                    .padding()
+                    .frame(width: 350, height: 150)
+                    .foregroundColor(.black)
                     .background(Color(red: 0.933, green: 0.933, blue: 0.938))
                     .cornerRadius(5)
+                
+
+                
+                    
                   //.padding()
                 
                 
@@ -141,7 +148,8 @@ struct Sign_Up_Developer_2: View {
                 
         }//vs
         .navigationTitle("Sign UP")
-
+        .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
+        , tintColor: .white)
     }
 }
 

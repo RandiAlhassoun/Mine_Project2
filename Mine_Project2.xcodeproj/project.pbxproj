@@ -20,6 +20,8 @@
 		C10481BD2940791B0021DDB2 /* Sign Up Learner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BC2940791B0021DDB2 /* Sign Up Learner.swift */; };
 		C10481C0294081200021DDB2 /* Sign Up Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BF294081200021DDB2 /* Sign Up Developer.swift */; };
 		C10481C2294081A80021DDB2 /* Sign Up Developer 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */; };
+		C10481C82941C5D50021DDB2 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */; };
+		C10481CA2941C60E0021DDB2 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C92941C60E0021DDB2 /* ContentView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		C10481BC2940791B0021DDB2 /* Sign Up Learner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Learner.swift"; sourceTree = "<group>"; };
 		C10481BF294081200021DDB2 /* Sign Up Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Developer.swift"; sourceTree = "<group>"; };
 		C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Developer 2.swift"; sourceTree = "<group>"; };
+		C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
+		C10481C92941C60E0021DDB2 /* ContentView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView2.swift; path = "../../../Downloads/e498368877a5ee831c7fdd4287fa25f1-bd0dc5e2ee8e39f001b416abc33b333817a66c85/ContentView2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			children = (
 				C10481AA29406A7D0021DDB2 /* Mine_Project2App.swift */,
 				C10481AC29406A7D0021DDB2 /* ContentView.swift */,
+				C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */,
 				C10481AE29406A7E0021DDB2 /* Assets.xcassets */,
 				C10481B029406A7E0021DDB2 /* Preview Content */,
 				C10481B829406F5E0021DDB2 /* Selectpage.swift */,
@@ -82,6 +87,7 @@
 				C10481BC2940791B0021DDB2 /* Sign Up Learner.swift */,
 				C10481BF294081200021DDB2 /* Sign Up Developer.swift */,
 				C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */,
+				C10481C92941C60E0021DDB2 /* ContentView2.swift */,
 			);
 			path = Mine_Project2;
 			sourceTree = "<group>";
@@ -173,6 +179,7 @@
 				4310A0492941EA9B00222B0F /* Developers.swift in Sources */,
 				4310A04B2944AC8700222B0F /* login .swift in Sources */,
 				C10481AB29406A7D0021DDB2 /* Mine_Project2App.swift in Sources */,
+				C10481CA2941C60E0021DDB2 /* ContentView2.swift in Sources */,
 				C10481C0294081200021DDB2 /* Sign Up Developer.swift in Sources */,
 				C10481BB294077BE0021DDB2 /* TabBar.swift in Sources */,
 			);

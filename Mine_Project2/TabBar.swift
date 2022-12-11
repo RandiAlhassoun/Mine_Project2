@@ -9,8 +9,23 @@ import SwiftUI
 
 struct TabBar: View {
     var body: some View {
-        Text("Hello, World!")
-    }
+        
+         TabView(){
+             
+             
+             ContentView().tabItem{Image(systemName: "house")
+                 Text("Explore")
+             }.tag(1)
+             
+             ContentView().tabItem{Image(systemName: "text.bubble")
+                 Text("Chat")
+             }.tag(2)
+             
+             Selectpage().tabItem{Image(systemName: "person.circle")
+                 Text("Profile")
+             }
+         }.accentColor((Color(red: 0.176, green: 0.217, blue: 0.479)))
+             }
 }
 
 struct TabBar_Previews: PreviewProvider {
