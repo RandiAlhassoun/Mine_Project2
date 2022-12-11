@@ -100,6 +100,9 @@ struct Sign_Up_Learner: View {
 
 struct Sign_Up_Learner_Previews: PreviewProvider {
     static var previews: some View {
-        Sign_Up_Learner()
+        Group {
+            Sign_Up_Learner()
+
+        }
     }
 }

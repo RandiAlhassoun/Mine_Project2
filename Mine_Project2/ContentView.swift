@@ -14,12 +14,12 @@ struct ContentView: View {
 //    }
     var body: some View {
       NavigationView {
-          Text("rand")
-//        List {
-//          ForEach(0..<25, id: \.self, content: { i in
-//            NavigationLink("(\(i)) Hello, Rand!", destination: EmptyView())
-//          })
-//        }
+         // Text("rand")
+        List {
+          ForEach(0..<25, id: \.self, content: { i in
+            NavigationLink("(\(i)) Hello, Rand!", destination: EmptyView())
+          })
+        }
         .navigationBarTitle("Bar Title")
       }
       .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
