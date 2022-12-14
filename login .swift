@@ -115,7 +115,7 @@ struct login_: View {
 
                     
                     
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: Selectpage()) {
                         Text("Sign Up")
                             .foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
                             .bold()

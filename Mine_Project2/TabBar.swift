@@ -21,7 +21,7 @@ struct TabBar: View {
                  Text("Chat")
              }.tag(2)
              
-             Selectpage().tabItem{Image(systemName: "person.circle")
+             login_().tabItem{Image(systemName: "person.circle")
                  Text("Profile")
              }
          }.accentColor((Color(red: 0.176, green: 0.217, blue: 0.479)))

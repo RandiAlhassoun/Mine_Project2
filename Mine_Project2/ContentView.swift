@@ -24,7 +24,7 @@ struct ContentView: View {
       }
       .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
       , tintColor: .white)
-     
+
       //  .background(Color(red: 0.176, green: 0.217, blue: 0.479))
     }
 
