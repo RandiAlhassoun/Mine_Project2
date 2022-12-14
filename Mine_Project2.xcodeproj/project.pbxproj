@@ -21,6 +21,7 @@
 		C10481BD2940791B0021DDB2 /* Sign Up Learner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BC2940791B0021DDB2 /* Sign Up Learner.swift */; };
 		C10481C0294081200021DDB2 /* Sign Up Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BF294081200021DDB2 /* Sign Up Developer.swift */; };
 		C10481C2294081A80021DDB2 /* Sign Up Developer 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */; };
+		C10481C82941C5D50021DDB2 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
