@@ -17,7 +17,7 @@ struct TabBar: View {
                  Text("Explore")
              }.tag(1)
              
-             ContentView().tabItem{Image(systemName: "text.bubble")
+             Selectpage().tabItem{Image(systemName: "text.bubble")
                  Text("Chat")
              }.tag(2)
              

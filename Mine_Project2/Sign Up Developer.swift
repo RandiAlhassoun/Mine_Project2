@@ -288,7 +288,7 @@ struct Sign_Up_Developer: View {
                 Text("You  have an account?")
                     .foregroundColor(.gray)
                 
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: Selectpage()) {
                    Text("Login")
                         .foregroundColor(Color(red: 0.176, green: 0.217, blue: 0.479))
                 }
@@ -296,7 +296,7 @@ struct Sign_Up_Developer: View {
                     
             }//vs
             .fullScreenCover(isPresented: $toContentView) {
-                ContentView()
+                Selectpage()
             }
 //
 //            .navigationTitle("Sign UP")

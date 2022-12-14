@@ -145,7 +145,7 @@ struct Sign_Up_Learner: View {
                 
         }//vs
         .fullScreenCover(isPresented: $toContentView) {
-            ContentView()
+            Selectpage()
         }
         
         .navigationTitle("Sign UP")

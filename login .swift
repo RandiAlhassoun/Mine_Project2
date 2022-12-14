@@ -99,7 +99,7 @@ struct login_: View {
                 }//info vstack
                 .padding()
                 Spacer()
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: Selectpage()) {
                     Text("Login").font(.title3).padding()
                     //.frame()
                         .frame(width: 350, height: 40)
