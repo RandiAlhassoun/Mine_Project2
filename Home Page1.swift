@@ -16,7 +16,7 @@ struct DeveloperView: View {
     
     var body: some View {
         if #available(iOS 16.0, *) {
-            NavigationStack {
+           // NavigationStack {
                 ZStack{
                   
                     
@@ -79,7 +79,7 @@ struct DeveloperView: View {
                 .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
                                     , tintColor: .white)
                 
-            }
+           // }
             
             .searchable(text: $searchText)
         } else {

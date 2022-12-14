@@ -13,6 +13,9 @@ struct Sign_Up_Developer_2: View {
     @State private var isSwiftClicked = false
     @State private var isPythonClicked = false
     @State private var isOtherClicked = false
+    
+    
+    
 //
 //    @State private var isEncouraging1Clicked = false
 //    @State private var isEntertainment1Clicked = false
@@ -157,4 +160,12 @@ struct Sign_Up_Developer_2_Previews: PreviewProvider {
     static var previews: some View {
         Sign_Up_Developer_2()
     }
+}
+
+
+
+
+struct Intrest {
+    var intrestName : String
+    var id = UUID()
 }

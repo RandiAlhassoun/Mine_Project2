@@ -20,7 +20,7 @@
 		C10481BD2940791B0021DDB2 /* Sign Up Learner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BC2940791B0021DDB2 /* Sign Up Learner.swift */; };
 		C10481C0294081200021DDB2 /* Sign Up Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BF294081200021DDB2 /* Sign Up Developer.swift */; };
 		C10481C2294081A80021DDB2 /* Sign Up Developer 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */; };
-		C10481C82941C5D50021DDB2 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */; };
+		C10481F02949A6700021DDB2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10481EF2949A6700021DDB2 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +39,8 @@
 		C10481BF294081200021DDB2 /* Sign Up Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Developer.swift"; sourceTree = "<group>"; };
 		C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up Developer 2.swift"; sourceTree = "<group>"; };
 		C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
+		C10481ED2949A6550021DDB2 /* Mine_Project2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mine_Project2.entitlements; sourceTree = "<group>"; };
+		C10481EF2949A6700021DDB2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10481F02949A6700021DDB2 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 				43426C552941C7EE00B9B5F0 /* NavBar.swift */,
 				C10481A929406A7D0021DDB2 /* Mine_Project2 */,
 				C10481A829406A7D0021DDB2 /* Products */,
+				C10481EE2949A6700021DDB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +79,7 @@
 		C10481A929406A7D0021DDB2 /* Mine_Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				C10481ED2949A6550021DDB2 /* Mine_Project2.entitlements */,
 				C10481AA29406A7D0021DDB2 /* Mine_Project2App.swift */,
 				C10481AC29406A7D0021DDB2 /* ContentView.swift */,
 				C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */,
@@ -95,6 +100,14 @@
 				C10481B129406A7E0021DDB2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C10481EE2949A6700021DDB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C10481EF2949A6700021DDB2 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,9 +316,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mine_Project2/Mine_Project2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mine_Project2/Preview Content\"";
+				DEVELOPMENT_TEAM = NH8783LNDA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -331,9 +346,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mine_Project2/Mine_Project2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mine_Project2/Preview Content\"";
+				DEVELOPMENT_TEAM = NH8783LNDA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

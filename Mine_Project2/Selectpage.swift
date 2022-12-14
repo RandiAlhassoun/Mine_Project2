@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Selectpage: View {
     var body: some View {
-        NavigationView{
+       // NavigationView{
         VStack{
             //---------------------------------
 //                        VStack(spacing: 20){
@@ -57,7 +57,7 @@ struct Selectpage: View {
         , tintColor: .white)
        
 
-        }//NavigationView{
+       // }//NavigationView{
     }//body
 }
 
