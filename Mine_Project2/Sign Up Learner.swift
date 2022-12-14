@@ -145,10 +145,10 @@ struct Sign_Up_Learner: View {
                 
         }//vs
         .fullScreenCover(isPresented: $toContentView) {
-            Selectpage()
+            TabBar()
         }
         
-        .navigationTitle("Sign UP")
+        .navigationTitle("Sign Up Learner")
         .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
         , tintColor: .white)
         

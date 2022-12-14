@@ -13,11 +13,11 @@ struct TabBar: View {
          TabView(){
              
              
-             Sign_Up_Learner().tabItem{Image(systemName: "house")
+             HomePage1().tabItem{Image(systemName: "house")
                  Text("Explore")
              }.tag(1)
              
-             Selectpage().tabItem{Image(systemName: "text.bubble")
+             EmptyPage().tabItem{Image(systemName: "text.bubble")
                  Text("Chat")
              }.tag(2)
              
@@ -25,6 +25,7 @@ struct TabBar: View {
                  Text("Profile")
              }
          }.accentColor((Color(red: 0.176, green: 0.217, blue: 0.479)))
+
              }
 }
 

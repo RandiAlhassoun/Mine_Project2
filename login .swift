@@ -4,7 +4,6 @@
 //
 //  Created by Shifa Alfaisal on 16/05/1444 AH.
 //
-
 import SwiftUI
 
 struct SecureTextField: View {
@@ -13,7 +12,8 @@ struct SecureTextField: View {
     @State private var ForgetPW: Bool = false
 
     @Binding var text: String
-    
+    //@State var ispresented = false
+
     var body: some View {
         HStack {
             if isSecureTextField {
@@ -33,6 +33,7 @@ struct SecureTextField: View {
 struct login_: View {
     @State private var Email: String = ""
     @State private var Password: String = ""
+    @State var ispresented = false
 
     
     var body: some View {
@@ -95,6 +96,32 @@ struct login_: View {
                         
                     }
                     
+//                    Button {
+//                        ispresented.toggle()
+//
+//                    } label: {
+//                        Text("Next").font(.title3).padding()
+//                            .frame(width: 350, height: 40)
+//                            .foregroundColor(.white)
+//                            .background(Color(red: 0.176, green: 0.217, blue: 0.479))
+//                            .cornerRadius(5)
+//                            .padding()
+//                    }
+
+
+                    
+                    NavigationLink(destination: HomePage1()) {
+                       Text("Login").font(.title3).padding()
+//                            .navigationBarBackButtonHidden(true)///\\\\\\\\\\
+                        
+                        //.frame()
+                            .frame(width: 350, height: 40)
+                            .foregroundColor(.white)
+                            .background(Color(red: 0.176, green: 0.217, blue: 0.479))
+                            .cornerRadius(5)
+                            .padding()
+                    }
+                    
                     
                 }//info vstack
                 .padding()
@@ -123,6 +150,7 @@ struct login_: View {
                     }
                 }//hstack
                 Spacer()
+
 
             }//vs
             .navigationTitle("LogIn")
