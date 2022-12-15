@@ -6,6 +6,21 @@
 //
 import SwiftUI
 
+//+++++++++++
+import Foundation
+
+//// Access Shared Defaults Object
+//let userDefaults = UserDefaults.standard
+//
+//// Read Boolean
+//let value = userDefaults.bool(forKey: "myKey")
+////userDefaults.set(true, forKey: "myKey")
+//let defaults = UserDefaults.standard
+//defaults.set(25, forKey: "Age")
+//+++++++++++
+
+
+
 struct SecureTextField: View {
     
     @State private var isSecureTextField: Bool = true

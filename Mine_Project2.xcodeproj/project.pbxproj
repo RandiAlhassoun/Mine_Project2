@@ -20,8 +20,8 @@
 		C10481C0294081200021DDB2 /* Sign Up Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481BF294081200021DDB2 /* Sign Up Developer.swift */; };
 		C10481C2294081A80021DDB2 /* Sign Up Developer 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10481C1294081A80021DDB2 /* Sign Up Developer 2.swift */; };
 		C10481F02949A6700021DDB2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10481EF2949A6700021DDB2 /* CloudKit.framework */; };
+		C1089C8F294B0CA90084B636 /* Home Page11.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1089C8E294B0CA90084B636 /* Home Page11.swift */; };
 		C1D0B69F294A0D2E00B75848 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0B69E294A0D2E00B75848 /* SearchBar.swift */; };
-		C1D0B6A1294A0DD300B75848 /* Home Page11.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0B6A0294A0DD300B75848 /* Home Page11.swift */; };
 		C1D0B6A3294A189700B75848 /* EmptyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0B6A2294A189700B75848 /* EmptyPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +42,8 @@
 		C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
 		C10481ED2949A6550021DDB2 /* Mine_Project2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mine_Project2.entitlements; sourceTree = "<group>"; };
 		C10481EF2949A6700021DDB2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C1089C8E294B0CA90084B636 /* Home Page11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Home Page11.swift"; path = "../../Desktop/Mine_Project2-Shifa/Home Page11.swift"; sourceTree = "<group>"; };
 		C1D0B69E294A0D2E00B75848 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		C1D0B6A0294A0DD300B75848 /* Home Page11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Home Page11.swift"; path = "../Mine_Project2-Shifa/Home Page11.swift"; sourceTree = "<group>"; };
 		C1D0B6A2294A189700B75848 /* EmptyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,9 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				4310A04A2944AC8700222B0F /* login .swift */,
+				C1089C8E294B0CA90084B636 /* Home Page11.swift */,
 				4310A0482941EA9B00222B0F /* Developers.swift */,
 				43C46A2C29406F5900FAE0DD /* Home Page1.swift */,
-				C1D0B6A0294A0DD300B75848 /* Home Page11.swift */,
 				C1D0B69E294A0D2E00B75848 /* SearchBar.swift */,
 				43426C552941C7EE00B9B5F0 /* NavBar.swift */,
 				C10481A929406A7D0021DDB2 /* Mine_Project2 */,
@@ -190,7 +190,7 @@
 				43426C562941C7EE00B9B5F0 /* NavBar.swift in Sources */,
 				C10481BD2940791B0021DDB2 /* Sign Up Learner.swift in Sources */,
 				C10481B929406F5E0021DDB2 /* Selectpage.swift in Sources */,
-				C1D0B6A1294A0DD300B75848 /* Home Page11.swift in Sources */,
+				C1089C8F294B0CA90084B636 /* Home Page11.swift in Sources */,
 				C10481C2294081A80021DDB2 /* Sign Up Developer 2.swift in Sources */,
 				4310A0492941EA9B00222B0F /* Developers.swift in Sources */,
 				4310A04B2944AC8700222B0F /* login .swift in Sources */,

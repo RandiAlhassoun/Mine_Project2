@@ -26,6 +26,7 @@ enum Develpers: String {
 //let title, value, imageName: String
 //}
 struct HomePage1: View {
+    
     @State private var searchText = ""
     @State private var isAllingClicked = true//false
     @State private var isIosClicked = false
@@ -224,6 +225,7 @@ struct HomePage1: View {
                                     Divider()
                                 }
                             }
+                            
                         }
                         
                         //                                .background(Color.gray)

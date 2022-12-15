@@ -41,7 +41,8 @@ struct Sign_Up_Learner: View {
             
             VStack(alignment: .leading){
                 //-----------name--------------------------------
-                Text("Inter your Name")
+                Text("Inter your Name").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                    .bold()
                    // .padding()
                     //.multilineTextAlignment(.leading)
                // TextField("Write your name", text: .constant(""))
@@ -53,7 +54,8 @@ struct Sign_Up_Learner: View {
                     //.padding()
                 //-------------------------------------------
                 //-----------Email--------------------------------
-                Text("Inter your Email")
+                Text("Inter your Email").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                    .bold()
                    // .padding()
                     //.multilineTextAlignment(.leading)
                 TextField("Write your Email", text:$Email)
@@ -62,33 +64,59 @@ struct Sign_Up_Learner: View {
                     .background(Color(red: 0.933, green: 0.933, blue: 0.938))
                     .cornerRadius(5)
                   //.padding()  //-----------Password--------------------------------
-                Text("Inter your Password")
-                   // .padding()
-                    //.multilineTextAlignment(.leading)
+//                Text("Inter your Password")
+//                   // .padding()
+//                    //.multilineTextAlignment(.leading)
+//
+//                SecureField("Inter your Password", text: $password)
+//                    .padding()
+//                    .frame(width: 350, height: 40)
+//                    .foregroundColor(.black)
+//                    .background(Color(red: 0.933, green: 0.933, blue: 0.938))
+//                    .cornerRadius(5)
+//
+                Text("Password")
+                    .foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                    .bold()
                 
-                SecureField("Inter your Password", text: $password)
-                    .padding()
+                // .padding()
+                //.multilineTextAlignment(.leading)
+            
+                SecureTextField(text: $password)
+
                     .frame(width: 350, height: 40)
                     .foregroundColor(.black)
+                    .padding([.leading], 12)
                     .background(Color(red: 0.933, green: 0.933, blue: 0.938))
                     .cornerRadius(5)
-                
-                
                 //-----------Confirm Password-------------------------
-                Text("Inter Confirm Password")
+                Text("Inter Confirm Password") .foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                    .bold()
+                
+                // .padding()
+                //.multilineTextAlignment(.leading)
             
-            SecureField("Inter Confirm Password", text: $passwordConfirm)
-                .padding()
-                .frame(width: 350, height: 40)
-                .foregroundColor(.black)
-                .background(Color(red: 0.933, green: 0.933, blue: 0.938))
-                .cornerRadius(5)
+                SecureTextField(text: $passwordConfirm)
+
+                    .frame(width: 350, height: 40)
+                    .foregroundColor(.black)
+                    .padding([.leading], 12)
+                    .background(Color(red: 0.933, green: 0.933, blue: 0.938))
+                    .cornerRadius(5)
+            
+//            SecureField("Inter Confirm Password", text: $passwordConfirm)
+//                .padding()
+//                .frame(width: 350, height: 40)
+//                .foregroundColor(.black)
+//                .background(Color(red: 0.933, green: 0.933, blue: 0.938))
+//                .cornerRadius(5)
 //
                 //====================================================
+
                 
-                VStack(alignment: .leading){
-        
-                }//info vstack
+//                VStack(alignment: .leading){
+//
+//                }//info vstack
 //                .padding()
 ////                Spacer()
 //                Button {
@@ -97,6 +125,12 @@ struct Sign_Up_Learner: View {
 //                    Text("Next").font(.title3).padding()
 //                }
 //======================
+                //++++++++++
+
+                
+                //.padding()
+                //-----------Password-----------------------
+                //++++++++++
                 
             }//info vstack
             .padding()

@@ -66,7 +66,9 @@ struct Sign_Up_Developer: View {
                 
                 VStack(alignment: .leading){
                     //-----------name--------------------------------
-                    Text("Inter your Name")
+                    Text("Inter your Name").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                        .bold()
+
                        // .padding()
                         //.multilineTextAlignment(.leading)
                    // TextField("Write your name", text: .constant(""))
@@ -78,7 +80,9 @@ struct Sign_Up_Developer: View {
                         //.padding()
                     //-------------------------------------------
                     //-----------Email--------------------------------
-                    Text("Inter your Email")
+                    Text("Inter your Email").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                        .bold()
+
                        // .padding()
                         //.multilineTextAlignment(.leading)
                     TextField("Write your Email", text:$Email)
@@ -87,47 +91,58 @@ struct Sign_Up_Developer: View {
                         .background(Color(red: 0.933, green: 0.933, blue: 0.938))
                         .cornerRadius(5)
                       //.padding()  //-----------Password--------------------------------
-                    Text("Inter your Password")
-                       // .padding()
-                        //.multilineTextAlignment(.leading)
                     
-                    SecureField("Inter your Password", text: $password)
-                        .padding()
+                    //=============================================
+                    
+                    //=============================================
+                    Text("Inter your Password").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                        .bold()
+                     
+                    
+                    
+                        SecureTextField(text: $password)
+
+                            .frame(width: 350, height: 40)
+                            .foregroundColor(.black)
+                            .padding([.leading], 12)
+                            .background(Color(red: 0.933, green: 0.933, blue: 0.938))
+                            .cornerRadius(5)
+//
+//                    SecureField("Inter your Password", text: $password)
+//                        .padding()
+//                        .frame(width: 350, height: 40)
+//                        .foregroundColor(.black)
+//                        .background(Color(red: 0.933, green: 0.933, blue: 0.938))
+//                        .cornerRadius(5)
+//
+                    
+                    //-----------Confirm Password-------------------------
+                    Text("Inter Confirm Password").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                        .bold()
+                    
+                    SecureTextField(text: $passwordConfirm)
+
                         .frame(width: 350, height: 40)
                         .foregroundColor(.black)
+                        .padding([.leading], 12)
                         .background(Color(red: 0.933, green: 0.933, blue: 0.938))
                         .cornerRadius(5)
-                    
-                    
-                    //-----------Confirm Password-------------------------
-                    Text("Inter Confirm Password")
-                
-                SecureField("Inter Confirm Password", text: $passwordConfirm)
-                    .padding()
-                    .frame(width: 350, height: 40)
-                    .foregroundColor(.black)
-                    .background(Color(red: 0.933, green: 0.933, blue: 0.938))
-                    .cornerRadius(5)
-    //
-                    //-----------Confirm Password-------------------------
-//                    Text("Inter  About your selfe")
-//
-                
-//                SecureField("Inter Confirm Password", text: $Bio)
+//                
+//                SecureField("Inter Confirm Password", text: $passwordConfirm)
 //                    .padding()
 //                    .frame(width: 350, height: 40)
 //                    .foregroundColor(.black)
 //                    .background(Color(red: 0.933, green: 0.933, blue: 0.938))
 //                    .cornerRadius(5)
-//    //
-//                    //====================================================
-//
+
                     VStack(alignment: .leading){
                         
                         VStack(alignment: .leading){
                            
                             //-----------Field--------------------------------
-                            Text("Field of interest")
+                            Text("Field of interest").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                                .bold()
+
                             
                             Menu {
                                        ForEach(dropDownList2, id: \.self){ client in
@@ -159,47 +174,10 @@ struct Sign_Up_Developer: View {
                                    .cornerRadius(5)
                             
 //
-//                            HStack{ Button("Java"){
-//
-//                                isJavaClicked.toggle()
-//                                isOtherClicked = false
-//                                isSwiftClicked = false
-//                                isPythonClicked = false
-//
-//                            }
-//                                    .buttonStyle(.bordered)
-//                                    .foregroundColor(isJavaClicked ?Color(UIColor.systemBackground) : .black)//------
-//                                    .background(isJavaClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
-//                                    .cornerRadius(5)
-//
-//                                Button("IOS"){
-//
-//                                    isSwiftClicked.toggle()
-//                                    isOtherClicked = false
-//                                    isPythonClicked = false
-//                                    isJavaClicked = false
-//                                }
-//                                    .buttonStyle(.bordered)
-//                                    .foregroundColor(isSwiftClicked ? Color(UIColor.systemBackground) : .black )
-//                                    .background(isSwiftClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
-//                                    .cornerRadius(5)
-//
-//                                Button("Python" ){
-//
-//                                    isPythonClicked.toggle()
-//                                    isOtherClicked = false
-//                                    isJavaClicked = false
-//                                    isSwiftClicked = false
-//                                }
-//                                    .buttonStyle(.bordered)
-//                                    .foregroundColor(isPythonClicked ? Color(UIColor.systemBackground) : .black )
-//
-//                                    .background(isPythonClicked ? Color(red: 0.343, green: 0.514, blue: 0.877) : Color(UIColor.systemBackground) )
-//                                    .cornerRadius(5)
-//
-//                            }
                             //-----------Years--------------------------------
-                            Text("Years of Experience")
+                            Text("Years of Experience").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                                .bold()
+
 
                             Menu {
                                        ForEach(dropDownList, id: \.self){ client in
@@ -231,7 +209,9 @@ struct Sign_Up_Developer: View {
                                    .cornerRadius(5)
                             
                             //-----------Email--------------------------------
-                            Text("About your selfe")
+                            Text("About your selfe").foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
+                                .bold()
+
                                // .padding()
                                 //.multilineTextAlignment(.leading)
                             TextField("Write About your selfe", text: $Bio)
@@ -320,15 +300,11 @@ struct Sign_Up_Developer: View {
          
 
 
-        
                                        
             CKContainer.init(identifier: "iCloud.com.exame.Mine-Project2").publicCloudDatabase.save(record){
                 record, error in
-                guard error == nil else{
-                    print(error?.localizedDescription)
-                    return
-                }
-                Thread.sleep(forTimeInterval: 0.7)
+                guard error == nil else{ return }
+                
                 toContentView.toggle()
 
             }
