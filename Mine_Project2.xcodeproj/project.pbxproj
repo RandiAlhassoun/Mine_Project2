@@ -48,6 +48,7 @@
 		C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
 		FC9B24332945BFAA000259A4 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		FC9B24502949A5C8000259A4 /* onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding.swift; sourceTree = "<group>"; };
+		FCA669B0294EF5260067679F /* Mine_Project2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mine_Project2.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		C10481A929406A7D0021DDB2 /* Mine_Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				FCA669B0294EF5260067679F /* Mine_Project2.entitlements */,
 				C10481AA29406A7D0021DDB2 /* Mine_Project2App.swift */,
 				C10481C72941C5D50021DDB2 /* NavigationBarColor.swift */,
 				C10481AE29406A7E0021DDB2 /* Assets.xcassets */,
@@ -188,7 +190,6 @@
 				C10481BD2940791B0021DDB2 /* Sign Up Learner.swift in Sources */,
 				C10481B929406F5E0021DDB2 /* Selectpage.swift in Sources */,
 				C10481C2294081A80021DDB2 /* Sign Up Developer 2.swift in Sources */,
-				4310A0492941EA9B00222B0F /* Developers.swift in Sources */,
 				FC9B24512949A5C8000259A4 /* onboarding.swift in Sources */,
 				4310A04B2944AC8700222B0F /* login .swift in Sources */,
 				C10481AB29406A7D0021DDB2 /* Mine_Project2App.swift in Sources */,
@@ -323,8 +324,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Mine_Project2/Mine_Project2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Mine_Project2/Preview Content\"";
 				DEVELOPMENT_TEAM = CHXYY877GH;
 				ENABLE_PREVIEWS = YES;
@@ -341,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.exame.Mine-Project2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.exame.MineProject2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,8 +357,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Mine_Project2/Mine_Project2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Mine_Project2/Preview Content\"";
 				DEVELOPMENT_TEAM = CHXYY877GH;
 				ENABLE_PREVIEWS = YES;
@@ -372,7 +377,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.exame.Mine-Project2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.exame.MineProject2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
