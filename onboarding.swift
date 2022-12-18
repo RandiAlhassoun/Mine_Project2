@@ -97,7 +97,7 @@ struct onboarding: View {
                             .cornerRadius(10)
                     }
                     .background(
-                        NavigationLink(destination: DeveloperView(), isActive: $isLinkActive) {
+                        NavigationLink(destination: login_(), isActive: $isLinkActive) {
                         }.hidden()
                     )
                     
