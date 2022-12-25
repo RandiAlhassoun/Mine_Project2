@@ -23,7 +23,7 @@ Developer/learner who faces a programming problem and wants to ask other people.
 - Project meet the functionals requirements
 - Project team satisfaction target is achieved
 # Tools
-[![SwiftUI][SwiftUI-img]][SwiftUI-url]   [![Sketch][Sketch-img]][Sketch-url]
+[![SwiftUI][SwiftUI-img]][SwiftUI-url]   [![Sketch][Sketch-img]][Sketch-url]   [![CloudKit][CloudKit-img]][CloudKit-url]   [![Firebase][Firebase-img]][Firebase-url]
 
 # Team
 #### PlanB
@@ -35,3 +35,7 @@ Developer/learner who faces a programming problem and wants to ask other people.
 [SwiftUI-url]: https://developer.apple.com/xcode/swiftui/
 [Sketch-img]: https://img.shields.io/badge/-Sketch-yellow
 [Sketch-url]: https://www.sketch.com
+[CloudKit-img]: https://img.shields.io/badge/-CloudKit-blue
+[CloudKit-url]: https://developer.apple.com/icloud/cloudkit/
+[Firebase-img]: https://img.shields.io/badge/-Firebase-yellow
+[Firebase-url]: https://firebase.google.com
