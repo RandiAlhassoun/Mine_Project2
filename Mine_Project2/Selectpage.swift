@@ -55,7 +55,7 @@ struct Selectpage: View {
         .navigationTitle("Sign UP")
         .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
         , tintColor: .white)
-        .navigationBarBackButtonHidden(true)
+        //.navigationBarBackButtonHidden(true)
        
 
        // }//NavigationView{

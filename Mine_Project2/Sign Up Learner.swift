@@ -46,7 +46,7 @@ struct Sign_Up_Learner: View {
                    // .padding()
                     //.multilineTextAlignment(.leading)
                // TextField("Write your name", text: .constant(""))
-                TextField("Name", text: $Name)
+                TextField("Write your Name", text: $Name)
                     .frame(width: 350, height: 40)
                     .foregroundColor(.black)
                     .background(Color(red: 0.933, green: 0.933, blue: 0.938))
@@ -146,6 +146,8 @@ struct Sign_Up_Learner: View {
                     .padding()
             }
 
+            
+            
 //            HStack{
 //            Text("You  have an account?")
 //                .foregroundColor(.gray)

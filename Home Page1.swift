@@ -1,9 +1,9 @@
-
 //  Home Page1.swift
 //  Mine_Project2
 //
 //  Created by Shifa Alfaisal on 13/05/1444 AH.
 //
+
 import SwiftUI
 struct MyData: Identifiable {
     var id = UUID()
@@ -26,7 +26,6 @@ enum Develpers: String {
 //let title, value, imageName: String
 //}
 struct HomePage1: View {
-    
     @State private var searchText = ""
     @State private var isAllingClicked = true//false
     @State private var isIosClicked = false
@@ -34,15 +33,15 @@ struct HomePage1: View {
     @State private var ispythonClicked = false
     
     var MData: [MyData] = [
-        .init(Title: "Abdallah mohamed   ", Subtitle: "IOS develorer", imageName: "Aimage", developerType: .ios),
+        .init(Title: "Abdallah mohamed   ", Subtitle: "IOS develorer", imageName: "Swiftim", developerType: .ios),
         
-            .init(Title: "Faisal althaqafi            ", Subtitle: "Java developer", imageName: "Bimage", developerType: .java),
-        
-        
-            .init(Title: "Waleed", Subtitle: "Paython developer            ", imageName: "Dimage", developerType: .python),
+            .init(Title: "Faisal althaqafi            ", Subtitle: "Java developer", imageName: "javaim", developerType: .java),
         
         
-            .init(Title: "Sara", Subtitle: "IOS develorer                   ", imageName: "Cimage", developerType: .ios),
+            .init(Title: "Waleed", Subtitle: "Paython developer            ", imageName: "Pythoim", developerType: .python),
+        
+        
+            .init(Title: "Sara", Subtitle: "IOS develorer                   ", imageName: "Swiftim", developerType: .ios),
         
         
     ]
@@ -50,6 +49,10 @@ struct HomePage1: View {
     var columns = Array(repeating: GridItem(.flexible()), count: 1)
     @State var text = ""
     @State var selectedDeveloper : Develpers = .all
+    
+    @State var toContentView = false
+
+    
     var body: some View {
         NavigationView {
             
@@ -63,59 +66,7 @@ struct HomePage1: View {
                     //                }
                     //                        Spacer()
                 }
-                //                .font(.title3)
-                //                //.padding()
-                //                .frame(width: 1000, height: 120)
-                //                .foregroundColor(Color.white)
-                //                .background(Color(red: 0.176, green: 0.217, blue: 0.479))
-                //                .padding(.bottom, 5.0)
-                
-                
-                //                HStack{
-                //                    VStack(alignment: .leading, spacing: 8.0){
-                //                        Text("Developers In")
-                //                            .foregroundColor(Color(red: 0.176, green: 0.217, blue: 0.479))
-                //
-                //                        HStack(spacing: 8.0){
-                //                            Button("All         "){
-                //
-                //                                isAllingClicke.toggle()
-                //                            }
-                //                            .buttonStyle(.bordered)
-                //                            .foregroundColor(Color(.black))
-                //                            .background(isAllingClicke ? Color(red: 0.793, green: 0.853, blue: 1.001) : Color(UIColor
-                //                                .systemBackground) )
-                //                            .cornerRadius(5)
-                //
-                //                            Button("Java      "){
-                //
-                //                                isJavaClicked.toggle()
-                //                            }
-                //                            .buttonStyle(.bordered)
-                //                            .foregroundColor(Color(.black))
-                //                            .background(isJavaClicked ? Color(red: 0.793, green: 0.853, blue: 1.001) : Color(UIColor.systemBackground) )
-                //                            .cornerRadius(5)
-                //
-                //                            Button("IOS       "){
-                //
-                //                                isIosClicked.toggle()
-                //                            }
-                //                            .buttonStyle(.bordered)
-                //                            .foregroundColor(Color(.black))
-                //                            .background(isIosClicked ? Color(red: 0.793, green: 0.853, blue: 1.001) : Color(UIColor.systemBackground) )
-                //                            .cornerRadius(5)
-                //                            Button("Python"){
-                //
-                //                                iscClicked.toggle()
-                //                            }
-                //                            .buttonStyle(.bordered)
-                //                            .foregroundColor(Color(.black))
-                //                            .background(iscClicked ? Color(red: 0.793, green: 0.853, blue: 1.001) : Color(UIColor.systemBackground) )
-                //                            .cornerRadius(5)
-                //                        }
-                //                    }
-                //
-                //                }
+
                 
                 VStack(alignment: .leading){
                     SearchBar(text: $text)
@@ -183,9 +134,18 @@ struct HomePage1: View {
                 
                 ScrollView(.vertical, showsIndicators: false){
                     
+                    
                     LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(MData.filter({"\($0)".contains(text) || text.isEmpty})) { i in
+                       // HStack{
+                       // VStack{
                             
+                        ForEach(MData.filter({"\($0)".contains(text) || text.isEmpty})) { i in
+//                            Button {
+//
+//                            } label: {
+//                                Text("Next").font(.title3).padding()
+//                            }
+//
                             if selectedDeveloper == .all {
                                 HStack (alignment: .center) {
                                     Image(i.imageName)
@@ -193,7 +153,7 @@ struct HomePage1: View {
                                         .frame(width: 50, height: 50, alignment: .leading)
                                         .clipShape(Circle())
                                         .overlay(Circle().stroke(Color(red: 0.176, green: 0.217, blue: 0.479), lineWidth: 2.0))
-                                    
+                                    HStack{
                                     VStack(alignment: .leading) {
                                         Text(i.Title).font(.headline)
                                             .foregroundColor(Color(red: 0.176, green: 0.217, blue: 0.479))
@@ -202,7 +162,21 @@ struct HomePage1: View {
                                         Text(i.Subtitle).font(.subheadline)
                                             .foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
                                     }
-                                }.padding(.init(top: 14, leading: 0, bottom: 8, trailing: 90))
+
+                                        //Text("Next")
+                                    
+                                        Spacer(minLength:99)
+           //=========================================
+                                        NavigationLink(destination: ProfileDetails()) {
+                                            
+                                            Image(systemName: "chevron.forward")
+
+                                        }
+                                        
+
+                                    }//H
+                                
+                                }.padding(.init(top: 14, leading: 0, bottom: 8, trailing: 10))
                                 Divider()
                             } else {
                                 if i.developerType == selectedDeveloper {
@@ -212,7 +186,7 @@ struct HomePage1: View {
                                             .frame(width: 50, height: 50, alignment: .leading)
                                             .clipShape(Circle())
                                             .overlay(Circle().stroke(Color(red: 0.176, green: 0.217, blue: 0.479), lineWidth: 2.0))
-                                        
+                                        HStack{
                                         VStack(alignment: .leading) {
                                             Text(i.Title).font(.headline)
                                                 .foregroundColor(Color(red: 0.176, green: 0.217, blue: 0.479))
@@ -221,26 +195,42 @@ struct HomePage1: View {
                                             Text(i.Subtitle).font(.subheadline)
                                                 .foregroundColor(Color(red: 0.343, green: 0.514, blue: 0.877))
                                         }
-                                    }.padding(.init(top: 14, leading: 0, bottom: 8, trailing: 90))
+                                            Spacer(minLength:99)
+
+                                            NavigationLink(destination: ProfileDetails()) {
+                                                
+                                                Image(systemName: "chevron.forward")
+
+                                            }
+                                    }//H
+                                    }.padding(.init(top: 14, leading: 0, bottom: 8, trailing: 10))
                                     Divider()
                                 }
                             }
                             
+//                            Button {
+//
+//                            } label: {
+//                                Text("Next").font(.title3).padding()
+//                            }
+                    
                         }
-                        
+                    //}//v
                         //                                .background(Color.gray)
                         
                     }
                     
                 }
             }
+//            .fullScreenCover(isPresented: $toContentView) {
+//                ProfileDetails()
+//            }
             .padding(.horizontal)
             
             .navigationTitle("Explore")
             
             .navigationBarColor(backgroundColor: UIColor(red: 0.18, green: 0.22, blue: 0.48, alpha: 1.00)
                                 , tintColor: .white)
-            
         }
         //                        .navigationTitle("Explore")
         //
