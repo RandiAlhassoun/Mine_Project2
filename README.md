@@ -27,7 +27,7 @@ Developer/learner who faces a programming problem and wants to ask other people.
 
 # Team
 #### PlanB
-<a href="https://www.linkedin.com/in/wedad-almehmadi-701476200/">Wedad Almehmadi</a>
+<a href="https://www.linkedin.com/in/wedad-almehmadi-701476200/">Wedad Almehmadi</a> - <a href="https://www.linkedin.com/in/shifa-abdulaziz-al-faisal-a60516121?original_referer=">Shifa Alfaisal</a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
