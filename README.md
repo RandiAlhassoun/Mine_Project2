@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <div>
-<h3><img align="left" width="100" height="100" src="Bitmap.png"> <br/> RankIt <br/>
+<h3><img align="left" width="100" height="100" src="Bitmap.png"> <br/> Coder <br/>
 <a href="https://testflight.apple.com/join/vu86ZiDu">Test-Flight</a> <br/> <br/> </h3>   
  </div>   
 
