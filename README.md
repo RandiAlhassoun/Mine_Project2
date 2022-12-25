@@ -1,19 +1,16 @@
 <!-- PROJECT LOGO -->
 <div>
-<h3><img align="left" width="100" height="100" src="Bitmap.png"> <br/> Coder <br/>
+<h3><img align="left" width="100" height="100" src="iPhone App@2x.png"> <br/> Coder <br/>
 <a href="https://testflight.apple.com/join/vu86ZiDu">Test-Flight</a> <br/> <br/> </h3>   
  </div>   
 
 
 # Overveiw
-Rankit is a reference app that provides reviews of events that do not have a fixed location, and training camps. Which needs a rate to help users to know about events that suite them.
+A communication platform between learners and developers. Who faced a programming problems and need to solve it.
 ### Proposed Solution
-To build an app that allows users to interact with occurring events by providing personal 
-feedback which can be used as a reference for other users who wish to attend the same 
-event.
+An App that helps/provides a way for professionals and learners who want(s) to give their consultation and people who want to consult them by a platform that combines the professionals and learners.
 ### Problem Statment
-Adults who need to view feedback about a desired event based on their interest in 
-order to decide whether this event is valuable or a waste of time.
+Developer/learner who faces a programming problem and wants to ask other people.
 # User stories
 - The user wants to create an account.
 - The user wants to view events reviews, and ratings 
